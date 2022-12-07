@@ -1,9 +1,13 @@
+
 <?php
-$num = 7;
-$fact = 1;
-for($i = $num; $i >= 1; $i--) // intiallly, i = 7
-{
-	$fact = $fact * $i; // 
+function factorial($x) {
+  if ($x == 0 || $x == 1)
+    return 1;
+  else 
+    return $x*factorial($x-1);    
 }
-echo "factorial of $num is = ".$fact;
+
+echo "18=  ".factorial(18)."\n";
+echo "8 =  ".factorial(8)."\n";
 ?>
+
